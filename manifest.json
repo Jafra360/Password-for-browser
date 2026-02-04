@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Password for Browser",
+  "version": "1.0.0",
+  "description": "Generate strong passwords directly in your browser.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Password Generator"
+  }
+}
