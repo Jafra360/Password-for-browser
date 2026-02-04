@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <h1>Password Generator</h1>
+        <p>Build a strong password for your accounts.</p>
+      </header>
+
+      <section class="output">
+        <input id="password" type="text" readonly aria-label="Generated password" />
+        <button id="copy" type="button">Copy</button>
+      </section>
+
+      <section class="controls">
+        <label class="range">
+          <span>Length</span>
+          <span id="lengthValue">16</span>
+        </label>
+        <input id="length" type="range" min="8" max="32" value="16" />
+
+        <div class="checkboxes">
+          <label><input id="uppercase" type="checkbox" checked /> Uppercase</label>
+          <label><input id="lowercase" type="checkbox" checked /> Lowercase</label>
+          <label><input id="numbers" type="checkbox" checked /> Numbers</label>
+          <label><input id="symbols" type="checkbox" checked /> Symbols</label>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="generate" type="button">Generate password</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
